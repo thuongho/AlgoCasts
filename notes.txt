@@ -1,0 +1,11 @@
+Debug code
+- debugger;
+-- add that line to where you want to stop
+- instantiate the function before the export
+- node inspect index.js
+- c to continue
+- repl
+-- enter into command line mode
+-- the variables are available
+-- type the variable and it will show what the value of the variable is
+-- test the code
