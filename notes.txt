@@ -9,3 +9,12 @@ Debug code
 -- the variables are available
 -- type the variable and it will show what the value of the variable is
 -- test the code
+
+Recursion
+- bare minimum pieces of info to represent problem
+- give reasonable defaults to bare minimum pieces of info
+function printNumber(n, decr = 1)
+-- decr is default
+-- printNumber(n - decr);
+- check base case. is there any work left to do? if not return
+- do some work. call your function again, make sure the args have changed in some fashion
