@@ -20,8 +20,18 @@ function printNumber(n, decr = 1)
 - do some work. call your function again, make sure the args have changed in some fashion
 
 Queue
+- movie line
 - FIFO
 - enqueue - add
 -- unshift
 - dequeue - remove
 -- pop
+
+Stack
+- tower
+- FILO
+- push
+- pop
+-- remove from top of Stack
+- peek
+-- peek at top of stack
