@@ -17,44 +17,6 @@
 //       '### '
 //       '####'
 
-function steps(n, row = 0, stair = '') {
-  // base case
-  if (row === n) {
-    return;
-  }
-
-  // condition to print stair
-  if (stair.length === n) {
-    console.log(stair);
-    // increment the row, reset stair
-    // return to stop anything other code below to run
-    return steps(n, row + 1);
-  }
-
-  const add = row < stair.length ? ' ' : '#';
-  // increment stair
-  steps(n, row, stair + add);
-}
+function steps(n) {}
 
 module.exports = steps;
-
-// function steps(n) {
-//   for (let i = 1; i <= n; i++) {
-//     console.log(('#'.repeat(i) + (' '.repeat(n - i))));
-//   }
-// }
-
-// function steps(n) {
-//   for (let row = 0; row < n; row++) {
-//     let stair = '';
-
-//     for (let column = 0; column < n; column++) {
-//       if (column <= row) {
-//         stair += '#';
-//       } else {
-//         stair += ' ';
-//       }
-//     }
-//     console.log(stair);
-//   }
-// }

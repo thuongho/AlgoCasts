@@ -11,22 +11,6 @@
 // 4       5
 // Answer: [1, 3, 2]
 
-function levelWidth(root) {
-  // width means BF - add children to the end
-  const counters = [0];
-  const nodes = [root, 's'];
-
-  while (nodes.length > 1) {
-    const node = nodes.shift();
-    if (node === 's') {
-      counters.push(0);
-      nodes.push('s');
-    } else {
-      nodes.push(...node.children);
-      counters[counters.length - 1]++;
-    }
-  }
-  return counters;
-}
+function levelWidth(root) {}
 
 module.exports = levelWidth;
