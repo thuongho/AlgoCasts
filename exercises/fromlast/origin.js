@@ -11,24 +11,6 @@
 //    list.insertLast('d');
 //    fromLast(list, 2).data // 'b'
 
-// input list, n output node
-function fromLast(list, n) {
-  // ref slow head
-  let slow = list.head;
-  // ref fast head
-  let fast = slow;
-  // advance fast n next
-  while (n > 0) {
-    fast = fast.next;
-    n--;
-  }
-  // increment slow and fast until fast reaches the end
-  while (fast.next) {
-    fast = fast.next;
-    slow = slow.next;
-  }
-  // return slow
-  return slow;
-} // O(n) time O(1)
+function fromLast(list, n) {}
 
 module.exports = fromLast;

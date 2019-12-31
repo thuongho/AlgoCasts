@@ -12,15 +12,6 @@
 //   l.insertLast('c')
 //   midpoint(l); // returns { data: 'b' }
 
-// input list output node
-function midpoint(list) {
-  // check input
-  // ref slow head
-  // ref fast head
-  // loop while fast next and next next is not null
-  // set slow to next
-  // set fast to next next
-  // return slow
-}
+function midpoint(list) {}
 
 module.exports = midpoint;
